@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CalculatorController.swift
 //  ConversionCalculator
 //
 //  Created by Alex Testin on 7/27/17.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class CalculatorController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     var num: String = ""
     var input = ""
     var decimalCount = 0
-
+    
     @IBOutlet weak var inputLabel: UITextField!
     @IBOutlet weak var outputLabel: UITextField!
     
@@ -59,34 +59,34 @@ class ViewController: UIViewController {
     
     func calculate() {
         switch(mode) {
-            case 1:
-                if(num.characters.count <= 20) {
-                    input = posORneg + num
-                }
-                inputLabel.text = input + " mi"
-                if(input.characters.count <= 20) {
-                    outputLabel.text = String(Float(input)! * 1.609344) + " km"
-                }
-            case 2:
-                if(num.characters.count <= 20) {
-                    input = posORneg + num
-                }
-                inputLabel.text = input + " km"
-                outputLabel.text = String(Float(input)! * 0.62137) + " mi"
-            case 3:
-                if(num.characters.count <= 20) {
-                    input = posORneg + num
-                }
-                inputLabel.text = input + " °F"
-                outputLabel.text = String((Float(input)! - 32) * (5/9)) + " °C"
-            case 4:
-                if(num.characters.count <= 20) {
-                    input = posORneg + num
-                }
-                inputLabel.text = input + " °C"
-                outputLabel.text = String(Float(input)! * (9/5) + 32) + " °F"
-            default:
-                outputLabel.text = inputLabel.text
+        case 1:
+            if(num.characters.count <= 20) {
+                input = posORneg + num
+            }
+            inputLabel.text = input + " mi"
+            if(input.characters.count <= 20) {
+                outputLabel.text = String(Float(input)! * 1.609344) + " km"
+            }
+        case 2:
+            if(num.characters.count <= 20) {
+                input = posORneg + num
+            }
+            inputLabel.text = input + " km"
+            outputLabel.text = String(Float(input)! * 0.62137) + " mi"
+        case 3:
+            if(num.characters.count <= 20) {
+                input = posORneg + num
+            }
+            inputLabel.text = input + " °F"
+            outputLabel.text = String((Float(input)! - 32) * (5/9)) + " °C"
+        case 4:
+            if(num.characters.count <= 20) {
+                input = posORneg + num
+            }
+            inputLabel.text = input + " °C"
+            outputLabel.text = String(Float(input)! * (9/5) + 32) + " °F"
+        default:
+            outputLabel.text = inputLabel.text
         }
     }
     

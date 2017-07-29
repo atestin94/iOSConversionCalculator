@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		76E65DA91F2AD9A200A9D64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E65DA81F2AD9A200A9D64B /* AppDelegate.swift */; };
-		76E65DAB1F2AD9A200A9D64B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E65DAA1F2AD9A200A9D64B /* ViewController.swift */; };
 		76E65DAE1F2AD9A200A9D64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E65DAC1F2AD9A200A9D64B /* Main.storyboard */; };
 		76E65DB11F2AD9A200A9D64B /* ConversionCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76E65DAF1F2AD9A200A9D64B /* ConversionCalculator.xcdatamodeld */; };
 		76E65DB31F2AD9A200A9D64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E65DB21F2AD9A200A9D64B /* Assets.xcassets */; };
 		76E65DB61F2AD9A200A9D64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E65DB41F2AD9A200A9D64B /* LaunchScreen.storyboard */; };
 		76E65DC11F2AD9A200A9D64B /* ConversionCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E65DC01F2AD9A200A9D64B /* ConversionCalculatorTests.swift */; };
 		76E65DCC1F2AD9A200A9D64B /* ConversionCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E65DCB1F2AD9A200A9D64B /* ConversionCalculatorUITests.swift */; };
+		76E65DDA1F2C164500A9D64B /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E65DD91F2C164500A9D64B /* CalculatorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		76E65DA51F2AD9A200A9D64B /* ConversionCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConversionCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E65DA81F2AD9A200A9D64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76E65DAA1F2AD9A200A9D64B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76E65DAD1F2AD9A200A9D64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76E65DB01F2AD9A200A9D64B /* ConversionCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConversionCalculator.xcdatamodel; sourceTree = "<group>"; };
 		76E65DB21F2AD9A200A9D64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		76E65DC71F2AD9A200A9D64B /* ConversionCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConversionCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E65DCB1F2AD9A200A9D64B /* ConversionCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionCalculatorUITests.swift; sourceTree = "<group>"; };
 		76E65DCD1F2AD9A200A9D64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76E65DD91F2C164500A9D64B /* CalculatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				76E65DA81F2AD9A200A9D64B /* AppDelegate.swift */,
-				76E65DAA1F2AD9A200A9D64B /* ViewController.swift */,
 				76E65DAC1F2AD9A200A9D64B /* Main.storyboard */,
 				76E65DB21F2AD9A200A9D64B /* Assets.xcassets */,
 				76E65DB41F2AD9A200A9D64B /* LaunchScreen.storyboard */,
 				76E65DB71F2AD9A200A9D64B /* Info.plist */,
 				76E65DAF1F2AD9A200A9D64B /* ConversionCalculator.xcdatamodeld */,
+				76E65DD91F2C164500A9D64B /* CalculatorController.swift */,
 			);
 			path = ConversionCalculator;
 			sourceTree = "<group>";
@@ -263,8 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E65DB11F2AD9A200A9D64B /* ConversionCalculator.xcdatamodeld in Sources */,
-				76E65DAB1F2AD9A200A9D64B /* ViewController.swift in Sources */,
 				76E65DA91F2AD9A200A9D64B /* AppDelegate.swift in Sources */,
+				76E65DDA1F2C164500A9D64B /* CalculatorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
