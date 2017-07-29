@@ -77,14 +77,14 @@ class ViewController: UIViewController {
                 if(num.characters.count <= 20) {
                     input = posORneg + num
                 }
-                inputLabel.text = input + " F"
-                outputLabel.text = String((Float(input)! - 32) * (5/9)) + " C"
+                inputLabel.text = input + " °F"
+                outputLabel.text = String((Float(input)! - 32) * (5/9)) + " °C"
             case 4:
                 if(num.characters.count <= 20) {
                     input = posORneg + num
                 }
-                inputLabel.text = input + " C"
-                outputLabel.text = String(Float(input)! * (9/5) + 32) + " F"
+                inputLabel.text = input + " °C"
+                outputLabel.text = String(Float(input)! * (9/5) + 32) + " °F"
             default:
                 outputLabel.text = inputLabel.text
         }
